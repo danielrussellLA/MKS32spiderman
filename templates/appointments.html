@@ -67,20 +67,20 @@
   <div>
     <h1 class="appointmentsTableSubTitle">Requested</h1>
 
-    <div class="appointment" isOpen = 'false' ng-click='isOpen = !isOpen'>
+    <div class="appointment" isOpen = 'false' ng-click='isOpen = !isOpen' ng-repeat="requestAppt in requested">
       <!-- <button class='joinButton' ng-click="requestToJoin($index)">join</button> -->
-      <img class="hostProfilePicture"src={{appt.profilePicture}}></img>
+      <img class="hostProfilePicture"src={{requestAppt.profilePicture}}></img>
       <div class="appointmentData">
-        <p class="hostName">{{appt.firstName}} {{appt.lastName}}</p>
-        <p class="hostDateTime">{{appt.day}}</p>
-        <p class="hostDateTime">{{appt.time}}</p>
+        <p class="hostName">{{requestAppt.firstName}} {{requestAppt.lastName}}</p>
+        <p class="hostDateTime">{{requestAppt.day}}</p>
+        <p class="hostDateTime">{{requestAppt.time}}</p>
       </div>
       <div  ng-show='isOpen' class="hostBio">
         <div class="aboutHostHeader">
           <h1 class="aboutHostTitle">About</h1>
         </div>
         <div>
-          <p class="hostBioText">{{appt.bio}}</p>
+          <p class="hostBioText">{{requestAppt.bio}}</p>
         </div>
       </div>
     </div>
