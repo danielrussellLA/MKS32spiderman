@@ -582,7 +582,6 @@ th {
   background-color: #EDEFED;
 }
 
-
 .yesButton {
   /*float: right;*/
   /*margin:0;*/
@@ -618,9 +617,6 @@ th {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-
-
-
 
  /*MEDIA QUERIES FOR MOBILE */
 @media(max-width: 1000px) {
