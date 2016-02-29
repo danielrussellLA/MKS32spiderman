@@ -583,6 +583,44 @@ th {
 }
 
 
+.yesButton {
+  /*float: right;*/
+  /*margin:0;*/
+  letter-spacing: 2px;
+  display: inline-block;
+  float: right;
+  margin-right: 0;
+  height: 75px;
+  width: 75px;
+  background-color: #70C1B3;
+  color: white;
+  border: none;
+  vertical-align: middle;
+  /*overflow: hidden;*/
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+
+}
+.noButton {
+  /*float: right;*/
+  /*margin:0;*/
+  letter-spacing: 2px;
+  display: inline-block;
+  float: right;
+  margin-right: 0;
+  height: 75px;
+  width: 75px;
+  background-color: #F25F5C;
+  color: white;
+  border: none;
+  vertical-align: middle;
+  /*overflow: hidden;*/
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+
+
 
  /*MEDIA QUERIES FOR MOBILE */
 @media(max-width: 1000px) {

@@ -51,8 +51,11 @@ angular.module('brew.appts', [])
     var token = $window.localStorage.getItem('com.brewed');
     $http.post('/filterAppointments', {token: token}).success(function(res){
       $scope.confirmed = res.confirmed;
+      console.log($scope.confirmed);
       $scope.hosting = res.hosting;
+      console.log($scope.hosting);
       $scope.requested = res.requested;
+      console.log($scope.requested);
     });
   };
 }]);
